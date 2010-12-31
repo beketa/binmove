@@ -134,7 +134,7 @@
   (setq overriding-terminal-local-map nil)
 
   ;; Unread this command keys.
-  (setq keys (this-command-keys))
+  (setq keys (this-command-keys-vector))
   (setq unread-command-events (append keys unread-command-events))
 
   (delete-overlay binary-move-overlay-1)
